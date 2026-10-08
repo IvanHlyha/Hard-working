@@ -1,0 +1,25 @@
+{
+  "name": "hard-working",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node nodeBasics/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanHlyha/Hard-working.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/IvanHlyha/Hard-working/issues"
+  },
+  "homepage": "https://github.com/IvanHlyha/Hard-working#readme",
+  "dependencies": {
+    "chalk": "^6.0.1"
+  }
+}
