@@ -4,9 +4,9 @@
    // console.log (`${number} x ${i} = ${number * i}`)
 //}
 
-const number = 44;
+const number = 22;
 let i = 1; 
-while (i <= 10) {
+while (i <= 1000) {
 console.log(`${number} x ${i} = ${number * i}`)
 i++;
 }
