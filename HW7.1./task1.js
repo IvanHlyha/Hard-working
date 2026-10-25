@@ -4,4 +4,4 @@ const handleNum = (number, handleEven, handleOdd) => {
 const handleEven = (number) => {console.log('number is even')} 
 const handleOdd = (number) => {console.log('number is odd')}
 
-(handleNum(10, handleEven, handleOdd))
+(handleNum(9, handleEven, handleOdd))
