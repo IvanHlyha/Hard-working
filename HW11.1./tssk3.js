@@ -12,40 +12,42 @@
 //   }
 // }
 
-
 async function fetchTodo() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-        if (!response.ok) {
-            throw new Error('Request failed');
-        }
-        const Todo = await response.json();
-        return Todo;
-    } catch (error) {
-        console.error('An error accurred:', error);
-        throw error;
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/todos/1",
+    );
+    if (!response.ok) {
+      throw new Error("Request failed");
     }
-}    
+    const Todo = await response.json();
+    return Todo;
+  } catch (error) {
+    console.error("An error accurred:", error);
+    throw error;
+  }
+}
 async function fetchUser() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
-        if (!response.ok) {
-            throw new Error('Request failed');
-        }
-        const User = await response.json(); 
-        return User; 
-    } catch (error) {
-        console.error('An error accurred:', error);
-        throw error; 
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/users/1",
+    );
+    if (!response.ok) {
+      throw new Error("Request failed");
     }
+    const User = await response.json();
+    return User;
+  } catch (error) {
+    console.error("An error accurred:", error);
+    throw error;
+  }
 }
 async function runTest() {
-   try {
-     const results = await Promise.all([fetchTodo(), fetchUser()])
-    console.log('Results:', results);
-} catch (error) {
-        console.error('Fatal error');
-    }
+  try {
+    const results = await Promise.all([fetchTodo(), fetchUser()]);
+    console.log("Results:", results);
+  } catch (error) {
+    console.error("Fatal error");
+  }
 }
 runTest();
-
