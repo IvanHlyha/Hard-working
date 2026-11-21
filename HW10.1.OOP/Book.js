@@ -22,7 +22,7 @@
     }
         set autor(value) {
             if (typeof value === 'string' && value.trim().length > 0) {
-                return this._autor = value
+                 this._autor = value
             } else {
                 console.error('Помилка: поле має бути заповнене'); 
             }
